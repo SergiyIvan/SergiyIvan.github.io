@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><!-- Your Name --></title>
+  <link rel="stylesheet" href="css/output.css">
+</head>
+<body>
+
+  <header>
+    <!--
+      Site header / nav.
+      Later: Lviv Secession (Art Nouveau) accent here — e.g. a thin
+      wrought-iron / Hutsul geometric motif as a CSS/SVG divider,
+      instead of a plain <hr>. See style-discussion.md for the
+      broader visual direction (palette, type, motifs).
+    -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="photography.html">Photography</a>
+    </nav>
+  </header>
+
+  <div id="layout">
+
+    <aside id="sidebar">
+      <!-- Profile photo -->
+      <img id="profile-photo" src="images/profile/photo.jpg" alt="">
+
+      <!-- Name, title, affiliation -->
+      <h1>Serhii Ivanenko</h1>
+      <p id="title">Computer Science PhD Student and Teaching Assistant at Instituto Superior Técnico, Student Research at INESC-ID</p>
+
+      <!-- Short bio / contact -->
+      <p id="bio">I am a third-year PhD student and a teaching assistant at Instituto Superior Técnico, and a student researcher at INESC-ID. My research interests focus on cloud computing, virtualization, programming languages, and managed runtimes. I completed my master's degree in Computer Science and Engineering at Instituto Superior Técnico and my bachelor's degree in Software Engineering at Lviv Polytechnic National University. I have had research internships at Oracle Labs and IBM Research.</p>
+
+      <!-- Contact / social links -->
+      <ul id="contact-links">
+        <li><a href="#">serhii.ivanenko@tecnico.ulisboa.pt</a></li>
+        <li><a href="#">https://github.com/SergiyIvan/</a></li>
+        <li><a href="#">https://www.linkedin.com/in/serhiiivanenko/</a></li>
+        <li><a href="#">https://orcid.org/0000-0002-4961-2679</a></li>
+        <li><a href="#">https://sergiyivan.github.io/cv.pdf</a></li>
+      </ul>
+    </aside>
+
+    <main id="content">
+
+      <section id="news">
+        <h2>Latest News</h2>
+        <ul id="news-list">
+          <li><span class="date">19.09.2026</span> <span class="text">Mosaic accepted at <a href="https://sigops.org/s/conferences/atc/2026/index.html">ATC'26</a></span></li>
+          <li><span class="date">19.09.2026</span> <span class="text">Faastion accepted at <a href="https://sigops.org/s/conferences/atc/2026/index.html">ATC'26</a></span></li>
+          <li><span class="date">07.2026 - 09.2026</span> <span class="text">Summer internship at <a href="https://research.ibm.com/labs/ireland">IBM Research Lab in Dublin</a></span></li>
+        </ul>
+      </section>
+
+      <section id="publications">
+        <h2>Publications</h2>
+        <ul id="publications-list">
+          <li class="publication">
+            <a class="pub-title" href="https://dl.acm.org/doi/pdf/10.1145/3828523.3857117">Premature Hardware Binding is the Root of all Evil! Making Serverless Performance-Portable with Lazy Hardware Binding</a>
+            <p class="pub-venue">To appear in Annual Technical Conference (ATC) 2026</p>
+            <p class="pub-authors"><span class="me">Serhii Ivanenko</span>, Carlos Segarra, and Rodrigo Bruno</p>
+          </li>
+
+          <li class="publication">
+            <a class="pub-title" href="https://dl.acm.org/doi/pdf/10.1145/3828523.3857019">Faastion: Elastic and Scalable Native Library Isolation for High-Density Serverless Platforms</a>
+            <p class="pub-venue">To appear in Annual Technical Conference (ATC) 2026</p>
+            <p class="pub-authors">Miguel Lourenço, Rahul Kondlapudi, <span class="me">Serhii Ivanenko</span>, Rodrigo Cidra, Pedro Fonseca, Rodrigo Bruno</p>
+          </li>
+
+          <li class="publication">
+            <a class="pub-title" href="https://dl.acm.org/doi/pdf/10.1145/3772052.3772267">Hydra: Virtualized Multi-Language Runtime for High-Density Serverless Platforms</a>
+            <p class="pub-venue">ACM Symposium on Cloud Computing (SoCC) 2025</p>
+            <p class="pub-authors"><span class="me">Serhii Ivanenko</span>, Vasyl Lanko, Rudi Horn, Vojin Jovanovic, and Rodrigo Bruno</p>
+          </li>
+
+          <li class="publication">
+            <a class="pub-title" href="https://dl.acm.org/doi/pdf/10.1145/3721465.3721864">Mosaic: Optimizing Cloud Resource Efficiency with Lazily-Packaged Application Modules</a>
+            <p class="pub-venue">SErverless Systems, Applications and MEthodologies (SESAME) 2025</p>
+            <p class="pub-authors"><span class="me">Serhii Ivanenko</span>, Carlos Segarra, and Rodrigo Bruno</p>
+          </li>
+
+          <li class="publication">
+            <a class="pub-title" href="https://dl.acm.org/doi/pdf/10.1145/3617651.3622990">CloudJIT: A Just-in-Time FaaS Optimizer (Work in Progress)</a>
+            <p class="pub-venue">Managed Programming Languages & Runtimes (MPLR) 2023</p>
+            <p class="pub-authors"><span class="me">Serhii Ivanenko</span>, Rodrigo Bruno, Jovan Stevanovic, Luís Veiga, and Vojin Jovanovic</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="experience">
+        <h2>Working Experience</h2>
+        <ul id="experience-list">
+          <li class="working-experience">
+            <p class="work-location">
+              <a href="https://www.inesc-id.pt/">INESC-ID</a>, Lisbon, Portugal
+            </p>
+            <p class="work-period">2022-present</p>
+            <p class="work-title">Student Researcher</p>
+            <p class="work-description">Working on cloud platforms leveraging cutting-edge language runtimes and systems technologies</p>
+          </li>
+
+          <li class="working-experience">
+            <p class="work-location">
+              <a href="https://research.ibm.com/labs/ireland">IBM Research</a>, Dublin, Ireland
+            </p>
+            <p class="work-period">2026</p>
+            <p class="work-title">Research Intern</p>
+            <p class="work-description">Worked on recommender-driven resource configuration for AI fine-tuning jobs in a shared cluster</p>
+          </li>
+
+          <li class="working-experience">
+            <p class="work-location">
+              <a href="https://www.oracle.com/europe/corporate/contact/field-offices/#ukraine">Oracle Labs</a>, Lviv, Ukraine
+            </p>
+            <p class="work-period">2019-2022</p>
+            <p class="work-title">Student/Intern</p>
+            <p class="work-description">Worked on GraalVM JavaScript, GraalVM Native Image, and Oracle DevRel projects</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <ul id="education-list">
+          <li class="education-item">
+            <p class="edu-location">
+              <a href="https://dei.tecnico.ulisboa.pt/">Instituto Superior Técnico</a>, Lisbon, Portugal
+            </p>
+            <p class="edu-period">2024-present</p>
+            <p class="edu-title">PhD in Computer Science and Engineering</p>
+          </li>
+
+          <li class="education-item">
+            <p class="edu-location">
+              <a href="https://dei.tecnico.ulisboa.pt/">Instituto Superior Técnico</a>, Lisbon, Portugal
+            </p>
+            <p class="edu-period">2021-2023</p>
+            <p class="edu-title">MSc in Computer Science and Engineering</p>
+          </li>
+
+          <li class="education-item">
+            <p class="edu-location">
+              <a href="https://lpnu.ua/en/sd">Lviv Polytechnic National University</a>, Lviv, Ukraine
+            </p>
+            <p class="edu-period">2021-2023</p>
+            <p class="edu-title">MSc in Computer Science and Engineering</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="teaching">
+        <h2>Teaching</h2>
+        <ul id="teaching-list">
+          <li class="teaching-item">
+            <p class="teaching-course">Platforms for AI Systems</p>
+            <p class="teaching-period">Fall 2026</p>
+            <p class="teaching-description">Teaching Assistant, Instituto Superior Técnico</p>
+          </li>
+
+          <li class="teaching-item">
+            <p class="teaching-course">Cloud Computing and Virtualization</p>
+            <p class="teaching-period">Spring 2023-2026</p>
+            <p class="teaching-description">Teaching Assistant, Instituto Superior Técnico</p>
+          </li>
+
+          <li class="teaching-item">
+            <p class="teaching-course">Management and Administration of IT Infrastructures and Services</p>
+            <p class="teaching-period">Fall 2023-2025</p>
+            <p class="teaching-description">Teaching Assistant, Instituto Superior Técnico</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="awards">
+        <h2>Awards</h2>
+        <ul id="awards-list">
+          <li class="award-item">
+            <p class="award-description">PhD Research Scholarship (<a href="https://www.fct.pt/">Fundação para a Ciência e a Tecnologia</a>)</p>
+          </li>
+
+          <li class="award-item">
+            <p class="award-description">The "Excellent Teacher 2024-2025" Diploma for teaching <span class="award-course">Cloud Computing and Virtualization</span> and <span class="award-course">Management and Administration of IT Infrastructures and Services</span></p>
+          </li>
+
+          <li class="award-item">
+            <p class="award-description">The "Excellent Teacher 2023-2024" Diploma for teaching <span class="award-course">Cloud Computing and Virtualization</span> and <span class="award-course">Management and Administration of IT Infrastructures and Services</span></p>
+          </li>
+
+          <li class="award-item">
+            <p class="award-description">The "Excellent Teacher 2022-2023" Diploma for teaching <span class="award-course">Cloud Computing and Virtualization</span></p>
+          </li>
+
+          <li class="award-item">
+            <p class="award-description">The Academic Merit Diploma 2022/2023, Instituto Superior Técnico.</p>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+
+  </div>
+
+  <footer>
+    @ 2026 Serhii Ivanenko
+    <!-- Copyright / last updated -->
+  </footer>
+
+</body>
+</html>

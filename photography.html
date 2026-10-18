@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography</title>
+  <link rel="stylesheet" href="css/output.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="photography.html">Photography</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Photography</h1>
+
+    <!--
+      Gallery grid. Each item points to a small thumbnail for the grid
+      and the full-resolution image (data-full) for the lightbox.
+      Keep thumbnails separate from full-res files — the full-res photos
+      are ~7MB each, and you don't want the grid loading all of them.
+    -->
+    <div id="gallery">
+      <!--
+      <button class="gallery-item" data-full="images/photography/full/example.jpg">
+        <img src="images/photography/thumbs/example.jpg" alt="">
+      </button>
+      -->
+    </div>
+  </main>
+
+  <!-- Lightbox (hidden by default, opened by js/lightbox.js) -->
+  <div id="lightbox" hidden>
+    <button id="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <footer></footer>
+
+  <script src="js/lightbox.js"></script>
+</body>
+</html>
