@@ -4,34 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/output.css">
 </head>
-<body>
+<body class="bg-ivory text-ink font-body flex flex-col min-h-screen">
 
   <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="blog.html">Blog</a>
-      <a href="photography.html">Photography</a>
+    <nav class="bg-accent text-ivory">
+      <div class="flex flex-wrap items-center justify-between gap-x-6 max-w-6xl mx-auto px-6 py-6">
+        <a class="font-heading brand-name" href="index.html" id="brand">Serhii Ivanenko</a>
+
+        <!-- Mobile menu button. -->
+        <button class="md:hidden" id="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="w-6 h-6">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+        <!--
+          Links row. Always flex (never display:none) so max-height can
+          animate; collapsed via max-h-0/opacity-0 on mobile, expanded by
+          nav.js toggling max-h-96/opacity-100. w-full forces it onto its
+          own line below (flex-wrap on the parent), md:w-auto rejoins the
+          row on desktop, where it's never collapsed (md:max-h-none etc).
+        -->
+        <div
+          class="flex w-full flex-col gap-2 overflow-hidden max-h-0 opacity-0 transition-all duration-300 ease-in-out md:w-auto md:flex-row md:gap-6 md:max-h-none md:pt-0 md:opacity-100 md:overflow-visible"
+          id="nav-links"
+        >
+          <a href="index.html">Home</a>
+          <a href="blog.html">Blog</a>
+          <a href="photography.html">Photography</a>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <main>
-    <h1>Blog</h1>
-
-    <div id="blog-cards">
-
-    </div>
-  </main>
-
-  <!-- Lightbox (hidden by default, opened by js/lightbox.js) -->
-  <div id="lightbox" hidden>
-    <button id="lightbox-close" aria-label="Close">&times;</button>
-    <img id="lightbox-img" src="" alt="">
+  <div class="flex flex-1 flex-col md:flex-row max-w-7xl mx-auto px-6" id="layout">
+    <main class="p-6">
+      <h1>Blog</h1>
+      <p>Work in progress.</p>
+    </main>
   </div>
 
-  <footer></footer>
+  <footer class="gap-6 py-6 px-6 flex justify-center bg-accent text-ivory">
+    @ 2026 Serhii Ivanenko All Rights Reserved.
+  </footer>
 
-  <script src="js/lightbox.js"></script>
+  <script src="js/nav.js"></script>
 </body>
 </html>
